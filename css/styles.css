@@ -1,0 +1,280 @@
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    max-width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 8vh 20vh 55vh 80vh 35vh 5vh 35vh 4vh;   
+      }
+.navcontainer {
+ grid-column: 1;
+ grid-row: 1 / 2;
+ justify-content: center;
+ align-items: center;
+flex-direction: row;
+      }
+                
+ul{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;}
+              
+#navlist li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+       }
+
+.header{
+grid-area: header; 
+grid-column: 1;
+grid-row: 2 / 3;
+display: flex;
+background-color: white;
+color: black;
+flex-direction: column;
+align-items: center;
+}  
+
+.section {
+    background-color:white;
+    grid-column: 1;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    }
+
+.maintext{
+    grid-area: maintext;
+    grid-column: 1 ;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+    background-color: black;
+    color: white;
+        }
+
+.images {
+grid-column: 1;
+grid-row: 5 / 6;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.box{
+grid-column: 1;
+grid-row: 6 / 7;  
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.photos {
+    grid-column: 1;
+    grid-row: 7 / 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    }
+
+.footer {
+background-color:black;
+grid-area: footer;
+grid-column: 1 / 6;
+grid-row: 8 / 19;
+color: white;
+padding: 1rem;
+font-family: Gurmukhi Sangam MN;
+text-align: center;
+font-size: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 200ms;
+}
+
+.btn:hover {
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;}
+
+.btn:focus{
+    background-color: black;
+    border: 1px solid black;
+    font-weight: bolder;}
+
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+    font-size: 35px;}
+
+h2{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 16px;}    
+
+h3{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;}
+
+p{
+    text-align: center;
+    font-family: Calibri;
+    font-weight: lighter;
+    font-size: 12px;}
+
+h4{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 14px;}
+
+img{max-width: 90%;max-height: 90%;padding: 3px;}
+
+.card{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    transition: 400ms;
+    }
+
+.card:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;}
+
+.card:focus{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;}
+
+img{max-width: 80%;max-height: 80%;}
+
+a {color: white;}
+
+a:hover{text-decoration: none;}
+a:focus{text-decoration: none;}
+
+.title{
+    text-align: center;
+}
+
+.first{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{max-width: 30%;max-height: 30%;padding: 3px;
+
+}
+
+@media only screen and (min-width: 900px){
+    .wrapper {
+        display: grid;
+        min-height: 100vh;
+        max-width: 100%;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 10vh 25vh 80vh 100vh 42vh 4vh 42vh 6vh;       
+}
+h1{font-size: 50px;}
+
+h2{font-size: 18px;}    
+
+h3{font-size: 38px;}
+
+p{font-size: 14px;}
+
+h4{font-size: 16px;}
+
+.card{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item{max-width: 20%;max-height: 20%;padding: 3px;}
+.footer{margin-top: 5px;}
+.section {
+    align-items: center;
+}
+
+@media only screen and (min-width: 1020px){
+h1{font-size: 55px;}
+
+h2{font-size: 20px;}    
+
+h3{font-size: 40px;}
+
+p{font-size: 16px;}
+
+h4{font-size: 18px;}
+
+.card{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn{
+    font-size: 16px;
+}
+
+.item{max-width: 15%;max-height: 15%;padding: 3px;}
+.footer{margin-top: 10px;}
+
+}}
